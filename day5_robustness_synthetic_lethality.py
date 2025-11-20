@@ -1,4 +1,3 @@
-import itertools
 import cobra
 from cobra.io import load_model
 from cobra.flux_analysis import single_reaction_deletion
@@ -6,156 +5,167 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load model and compute WT growth
+# ------------------------------------------------------------
+# Load model and wild-type growth
+# ------------------------------------------------------------
 model = load_model("textbook")
-print("Loaded model:", model)
+wt_sol = model.optimize()
+wt_growth = wt_sol.objective_value
+print("WT biomass:", wt_growth)
 
-wt_solution = model.optimize()
-wt_growth = wt_solution.objective_value
-print("WT biomass (objective value):", wt_growth)
-
-# Single-reaction KO robustness
+# ------------------------------------------------------------
+# Part 1 — Single-reaction KO robustness
+# ------------------------------------------------------------
 ess_rxn = single_reaction_deletion(model)
 
-# Add normalized growth ratio
+# Backup the original index for safety
+ess_rxn = ess_rxn.copy()
+idx = ess_rxn.index.astype(str)
+
+# If the index already matches reaction IDs, use it
+if all(i in model.reactions for i in idx):
+    ess_rxn["reaction_id"] = idx
+else:
+    # Otherwise map by order to the model reaction list
+    rxn_ids = [r.id for r in model.reactions]
+    ess_rxn["reaction_id"] = rxn_ids[: len(ess_rxn)]
+
+# Normalize growth ratio
 ess_rxn["growth_ratio"] = ess_rxn["growth"] / wt_growth
 
-# Save full table
+# Set reaction IDs as the index (clean and safe)
+ess_rxn = ess_rxn.set_index("reaction_id")
+
+# Save single-KO results
 ess_rxn.to_csv("day5_single_reaction_KO_robustness.csv")
 print(ess_rxn.head())
 
-
-# Plot robustness curve: sort reactions by growth_ratio ---
-sorted_gr = ess_rxn["growth_ratio"].sort_values(
-    ascending=True).reset_index(drop=True)
+# Robustness curve
+sorted_gr = ess_rxn["growth_ratio"].sort_values().reset_index(drop=True)
 
 plt.figure(figsize=(6, 4))
 plt.plot(sorted_gr.values, marker=".", linestyle="-")
-plt.xlabel("Reaction knockout (sorted)")
+plt.xlabel("Reactions (sorted KO)")
 plt.ylabel("Growth ratio (KO / WT)")
-plt.title("Day 5: Single-reaction KO robustness curve")
+plt.title("Day 5: Single-reaction KO robustness")
 plt.tight_layout()
 plt.savefig("day5_single_KO_robustness_curve.png", dpi=300)
 plt.close()
 
-# Also a histogram if you like
+# Histogram of single-KO growth ratios
 plt.figure(figsize=(6, 4))
 ess_rxn["growth_ratio"].hist(bins=30)
 plt.xlabel("Growth ratio (KO / WT)")
-plt.ylabel("Number of reactions")
-plt.title("Day 5: Distribution of single-KO growth ratios")
+plt.ylabel("Count")
+plt.title("Day 5: Single-KO growth ratio distribution")
 plt.tight_layout()
 plt.savefig("day5_single_KO_growth_ratio_hist.png", dpi=300)
 plt.close()
 
-# Double-reaction KO (synthetic lethality)
+# ------------------------------------------------------------
+# Part 2 — Double KO & Synthetic Lethality
+# ------------------------------------------------------------
+print("\n[Part 2] Selecting candidates for double KO...")
 
-# 1 Choose candidate reactions for double KO
-#     Strategy: choose reactions that are:
-#       - solution status is "optimal"
-#       - single KO is not lethal (growth_ratio > single_lethal_cutoff)
-#     To keep runtime reasonable, we only take the first N candidates.
+# Pick reactions with near-WT growth and excluding exchange reactions
+candidate = ess_rxn[
+    (ess_rxn["status"] == "optimal")
+    & (ess_rxn["growth_ratio"] >= 0.95)
+    & (ess_rxn["growth_ratio"] <= 1.05)
+    & (~ess_rxn.index.str.startswith("EX_"))
+].sort_values("growth_ratio", ascending=False)
 
-single_lethal_cutoff = 0.2   # <0.2 ~ strongly essential
-max_candidates = 30          # you can increase if your machine is fast enough
+max_candidates = 20
+candidate_ids = list(candidate.index[:max_candidates])
 
-candidates = ess_rxn[
-    (ess_rxn["status"] == "optimal") &
-    (ess_rxn["growth_ratio"] > single_lethal_cutoff)
-].sort_values("growth_ratio")
+print(f"Selected {len(candidate_ids)} candidate reactions.")
+print("Example:", candidate_ids[:10])
 
-candidate_ids = list(candidates.index[:max_candidates])
-print(
-    f"Selected {len(candidate_ids)} candidate reactions for double KO analysis.")
-print("Example candidates:", candidate_ids[:10])
+# Sanity check: confirm all IDs exist in model
+invalid = [rid for rid in candidate_ids if rid not in model.reactions]
+if invalid:
+    print("Invalid reaction IDs:", invalid)
+    raise RuntimeError("Candidate list contains invalid reaction IDs.")
 
-
-# 2 Prepare containers for double KO results
+# Prepare results matrix
 n = len(candidate_ids)
 growth_mat = pd.DataFrame(
-    np.nan,
-    index=candidate_ids,
-    columns=candidate_ids,
-    dtype=float
+    np.nan, index=candidate_ids, columns=candidate_ids, dtype=float
 )
 
-synthetic_pairs = []  # store synthetic lethal pairs as dict
+synthetic_pairs = []
 
+# Thresholds
+single_safe_cutoff = 0.5      # single KO must retain growth
+double_lethal_cutoff = 0.05   # double KO considered lethal
 
-# thresholds to define synthetic lethality
-single_safe_cutoff = 0.5   # both single KOs must have growth_ratio > 0.5
-double_lethal_cutoff = 0.05  # double KO growth_ratio < 0.05 considered lethal
+print("\nSynthetic lethal criteria:")
+print("  single KO growth_ratio >", single_safe_cutoff)
+print("  double KO growth_ratio <", double_lethal_cutoff, "\n")
 
-print(f"\nSynthetic lethal criteria:")
-print(f"  Single KO growth_ratio > {single_safe_cutoff}")
-print(f"  Double KO growth_ratio < {double_lethal_cutoff}\n")
-
-
-# 3 Loop over all pairs (i, j) with i <= j
+# Double KO loop
 for i, rxn_i in enumerate(candidate_ids):
     for j, rxn_j in enumerate(candidate_ids):
-        if j < i:  # fill symmetric matrix only once
+        if j < i:
             continue
 
         with model:
-            # knock out both reactions in the temporary model
             model.reactions.get_by_id(rxn_i).knock_out()
             model.reactions.get_by_id(rxn_j).knock_out()
+            sol = model.optimize()
 
-            sol_ij = model.optimize()
-            growth_ij = sol_ij.objective_value if sol_ij.status == "optimal" else 0.0
+            if sol.status == "optimal" and wt_growth > 0:
+                gr_ij = sol.objective_value / wt_growth
+            else:
+                gr_ij = 0.0
 
-        if wt_growth > 0:
-            gr_ij = growth_ij / wt_growth
-        else:
-            gr_ij = 0.0
-
-        # fill matrix (symmetric)
         growth_mat.loc[rxn_i, rxn_j] = gr_ij
         growth_mat.loc[rxn_j, rxn_i] = gr_ij
 
-        # check synthetic lethality
+        # Check for synthetic lethality
         gr_i = ess_rxn.loc[rxn_i, "growth_ratio"]
         gr_j = ess_rxn.loc[rxn_j, "growth_ratio"]
 
-        if (gr_i > single_safe_cutoff) and (gr_j > single_safe_cutoff) and (gr_ij < double_lethal_cutoff):
-            synthetic_pairs.append({
-                "rxn_i": rxn_i,
-                "rxn_j": rxn_j,
-                "single_gr_i": gr_i,
-                "single_gr_j": gr_j,
-                "double_gr_ij": gr_ij
-            })
+        if (gr_i > single_safe_cutoff) and (gr_j > single_safe_cutoff) and (
+            gr_ij < double_lethal_cutoff
+        ):
+            synthetic_pairs.append(
+                {
+                    "rxn_i": rxn_i,
+                    "rxn_j": rxn_j,
+                    "single_gr_i": gr_i,
+                    "single_gr_j": gr_j,
+                    "double_gr_ij": gr_ij,
+                }
+            )
 
-    print(f"Finished row {i+1}/{n} ({rxn_i})")
+    print(f"Finished {i+1}/{n}: {rxn_i}")
 
 print("\nDouble KO simulation finished.")
 
-
-# 4 Save double KO growth matrix
+# Save results
 growth_mat.to_csv("day5_double_KO_growth_matrix.csv")
 
-# 5 Save synthetic lethal pairs (if any)
 if synthetic_pairs:
-    sl_df = pd.DataFrame(synthetic_pairs)
-    sl_df = sl_df.sort_values("double_gr_ij")
+    sl_df = pd.DataFrame(synthetic_pairs).sort_values("double_gr_ij")
     sl_df.to_csv("day5_synthetic_lethal_pairs.csv", index=False)
     print(f"Found {len(sl_df)} synthetic lethal pairs.")
-    print("Saved: day5_synthetic_lethal_pairs.csv")
     print(sl_df.head())
 else:
-    print("No synthetic lethal pairs found under current thresholds.")
     sl_df = pd.DataFrame(
-        columns=["rxn_i", "rxn_j", "single_gr_i", "single_gr_j", "double_gr_ij"])
+        columns=["rxn_i", "rxn_j", "single_gr_i", "single_gr_j", "double_gr_ij"]
+    )
+    print("No synthetic lethal pairs found with current thresholds.")
 
-
-# 6 Plot heatmap of double KO growth ratios
+# Heatmap
 plt.figure(figsize=(8, 6))
 plt.imshow(growth_mat.values, origin="lower", aspect="auto")
 plt.colorbar(label="Growth ratio (double KO / WT)")
 plt.xticks(range(n), candidate_ids, rotation=90)
 plt.yticks(range(n), candidate_ids)
-plt.title("Day 5: Double KO growth ratio matrix (candidate reactions)")
+plt.title("Day 5: Double KO growth ratio matrix")
 plt.tight_layout()
 plt.savefig("day5_double_KO_growth_heatmap.png", dpi=300)
 plt.close()
+
+
