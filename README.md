@@ -5,6 +5,8 @@ Day 2: Flux Variability Analysis (FVA) + knockout simulation.
 Day 3: reaction/gene essentiality scan + essentiality classification + basic visualization.  
 Day 4: FVA-based metabolic rewiring analysis after PFK knockout (Δ flux-range detection + top-perturbed reactions).  
 Day 5: robustness analysis (single-KO curve) + double knockout synthetic lethality mapping.  
+Day 6: gene knockout analysis (GPR-based single-gene KO) + gene essentiality classification + robustness curves + optional pathway-level gene KO.  
+
 
 
 
