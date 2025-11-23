@@ -1,0 +1,5 @@
+condition,EX_glc__D_e_lb,EX_o2_e_lb,EX_ac_e_lb,growth
+WT_reference,-10.0,-1000.0,0.0,0.8739215069684279
+anaerobic_no_O2,-10.0,0.0,0.0,0.21166294973531086
+glucose_uptake_-5,-5.0,-1000.0,0.0,0.41559777509290635
+acetate_only,0.0,-1000.0,-10.0,0.1733385844777865

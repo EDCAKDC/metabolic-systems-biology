@@ -1,0 +1,5 @@
+objective_type,objective_rxn,max_value
+biomass_default,1.0*Biomass_Ecoli_core - 1.0*Biomass_Ecoli_core_reverse_2cdba,0.8739215069684279
+ATPM,ATPM,175.00000000000006
+lactate_secretion,EX_lac__D_e,20.00000000000001
+NADH16,NADH16,120.0
