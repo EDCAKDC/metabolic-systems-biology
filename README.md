@@ -9,6 +9,8 @@ Day 6: gene knockout analysis (GPR-based single-gene KO) + gene essentiality cla
 Day 7: Constructed a gene–reaction bipartite metabolic network, annotated nodes with essentiality from single-gene/reaction KO, computed topological centrality metrics, identified articulation-point vulnerabilities, and generated multiple network visualizations.  
 Day 8: Modeled glucose-dependent growth by varying exchange-reaction bounds, showing classic linear limitation behavior in FBA.  
 Day 9: Explored the feasible flux space via randomized sampling and visualized flux variability and PCA structure.  
+Day 10: Nutrient-scan trade-off analysis  
+
 
 
 
