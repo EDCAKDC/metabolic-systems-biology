@@ -1,16 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-Day 10 – Production–growth trade-off (nutrient scan + Pareto curve)
-
-Topics:
-- Scan nutrient (e.g. glucose) uptake bounds
-- For each environment, run FBA and record biomass + product flux
-- Visualize the biomass–product Pareto frontier
-
-Model: COBRApy "textbook" E. coli core model
-"""
-
 import os
 import cobra
 from cobra.io import load_model
@@ -18,9 +5,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# ------------------------------------------------------------
+
 # Part 0 – Output folders and basic settings
-# ------------------------------------------------------------
 DATA_DIR = "data"
 FIG_DIR = "figures"
 
@@ -37,9 +23,8 @@ PRODUCT_RXN_ID = "EX_ac_e"              # product to track (acetate export, chan
 GLC_LB_VALUES = np.linspace(-5.0, -20.0, 16)  # 16 steps between -5 and -20
 
 
-# ------------------------------------------------------------
+
 # Part 1 – Helper: run FBA for a given glucose bound
-# ------------------------------------------------------------
 def run_fba_with_glucose_limit(base_model, glc_lb):
     """
     Set the glucose uptake lower bound, run FBA, and return:
@@ -68,9 +53,8 @@ def run_fba_with_glucose_limit(base_model, glc_lb):
         return solution.status, biomass, product_flux
 
 
-# ------------------------------------------------------------
+
 # Part 2 – Main scan over glucose bounds
-# ------------------------------------------------------------
 def main():
     print("Loading model ...")
     model = load_model("textbook")
@@ -99,9 +83,8 @@ def main():
 
     df = pd.DataFrame(results)
 
-    # --------------------------------------------------------
+
     # Part 3 – Save numeric results
-    # --------------------------------------------------------
     out_csv = os.path.join(DATA_DIR, "day10_glucose_tradeoff.csv")
     df.to_csv(out_csv, index=False)
     print(f"\nSaved trade-off table to: {out_csv}")
@@ -109,9 +92,8 @@ def main():
     # Filter feasible solutions (status == "optimal")
     df_ok = df[df["status"] == "optimal"].copy()
 
-    # --------------------------------------------------------
+
     # Part 4 – Plot biomass vs product (Pareto-style curve)
-    # --------------------------------------------------------
     plt.figure(figsize=(6, 5))
     plt.scatter(df_ok["biomass"], df_ok["product_flux"])
     plt.xlabel("Biomass growth rate")
@@ -124,9 +106,7 @@ def main():
     plt.close()
     print(f"Saved Pareto-style plot to: {pareto_fig}")
 
-    # --------------------------------------------------------
     # Part 5 – Plot glucose uptake vs biomass/product (optional)
-    # --------------------------------------------------------
     plt.figure(figsize=(6, 5))
     plt.plot(df_ok["glucose_lb"], df_ok["biomass"], marker="o", label="Biomass")
     plt.plot(df_ok["glucose_lb"], df_ok["product_flux"], marker="s", label=f"{PRODUCT_RXN_ID}")
