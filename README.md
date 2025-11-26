@@ -10,6 +10,7 @@ Day 7: Constructed a gene–reaction bipartite metabolic network, annotated node
 Day 8: Modeled glucose-dependent growth by varying exchange-reaction bounds, showing classic linear limitation behavior in FBA.  
 Day 9: Explored the feasible flux space via randomized sampling and visualized flux variability and PCA structure.  
 Day 10: Nutrient-scan trade-off analysis  
+Day 11: Implemented multi-objective FBA by constraining biomass to a fixed fraction of its maximum value and optimizing product secretion, generating a full biomass–product Pareto frontier for metabolic trade-off analysis.  
 
 
 
