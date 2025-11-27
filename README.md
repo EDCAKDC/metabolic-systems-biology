@@ -11,6 +11,7 @@ Day 8: Modeled glucose-dependent growth by varying exchange-reaction bounds, sho
 Day 9: Explored the feasible flux space via randomized sampling and visualized flux variability and PCA structure.  
 Day 10: Nutrient-scan trade-off analysis  
 Day 11: Implemented multi-objective FBA by constraining biomass to a fixed fraction of its maximum value and optimizing product secretion, generating a full biomass–product Pareto frontier for metabolic trade-off analysis.  
+Day 12 – Reaction-level metabolic rewiring: WT vs Pareto model  
 
 
 
