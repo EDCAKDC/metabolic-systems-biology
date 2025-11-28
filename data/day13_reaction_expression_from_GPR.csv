@@ -1,0 +1,96 @@
+rxn_id,reaction_name,subsystem,gpr_rule,num_genes,reaction_expression
+ACALD,acetaldehyde dehydrogenase (acetylating),NA,b0351 or b1241,2,6.964691855978616
+ACALDt,R acetaldehyde reversible - transport,NA,s0001,1,2.268514535642031
+ACKr,acetate kinase,NA,b2296 or b3115 or b1849,3,7.1946896978556305
+ACONTa,"aconitase (half-reaction A, Citrate hydro-lyase)",NA,b0118 or b1276,2,9.807641983846155
+ACONTb,"aconitase (half-reaction B, Isocitrate hydro-lyase)",NA,b0118 or b1276,2,9.807641983846155
+ACt2r,R acetate reversible transport via proton - symport,NA,,0,
+ADK1,adenylate kinase,NA,b0474,1,4.809319014843609
+AKGDH,2-Oxogluterate dehydrogenase,NA,b0726 and b0116 and b0727,3,3.4317801615086942
+AKGt2r,R 2 oxoglutarate reversible transport via - symport,NA,b2587,1,4.385722446796244
+ALCD2x,alcohol dehydrogenase (ethanol),NA,b1478 or b0356 or b1241,3,6.964691855978616
+ATPM,ATP maintenance requirement,NA,,0,
+ATPS4r,ATP synthase (four protons for one ATP),NA,(b3738 and b3736 and b3737 and b3735 and b3733 and b3731 and b3732 and b3734) or (b3734 and b3732 and b3731 and b3733 and b3735 and b3737 and b3736 and b3738 and b3739),9,1.7545175614749253
+Biomass_Ecoli_core,Biomass Objective Function with GAM,NA,,0,
+CO2t,R CO2 transporter via - diffusion,NA,s0001,1,2.268514535642031
+CS,citrate synthase,NA,b0720,1,7.224433825702215
+CYTBD,cytochrome oxidase bd (ubiquinol-8: 2 protons),NA,(b0978 and b0979) or (b0733 and b0734),4,2.9371404638882934
+D_LACt2,R D lactate transport via proton - symport,NA,b2975 or b3603,2,6.309761238544878
+ENO,enolase,NA,b2779,1,4.337011726795282
+ETOHt2r,ETOHt2r,NA,,0,
+EX_ac_e,Acetate exchange,NA,,0,
+EX_acald_e,Acetaldehyde exchange,NA,,0,
+EX_akg_e,2-Oxoglutarate exchange,NA,,0,
+EX_co2_e,CO2 exchange,NA,,0,
+EX_etoh_e,Ethanol exchange,NA,,0,
+EX_for_e,Formate exchange,NA,,0,
+EX_fru_e,D-Fructose exchange,NA,,0,
+EX_fum_e,Fumarate exchange,NA,,0,
+EX_glc__D_e,D-Glucose exchange,NA,,0,
+EX_gln__L_e,L-Glutamine exchange,NA,,0,
+EX_glu__L_e,L-Glutamate exchange,NA,,0,
+EX_h_e,H+ exchange,NA,,0,
+EX_h2o_e,H2O exchange,NA,,0,
+EX_lac__D_e,D-lactate exchange,NA,,0,
+EX_mal__L_e,L-Malate exchange,NA,,0,
+EX_nh4_e,Ammonia exchange,NA,,0,
+EX_o2_e,O2 exchange,NA,,0,
+EX_pi_e,Phosphate exchange,NA,,0,
+EX_pyr_e,Pyruvate exchange,NA,,0,
+EX_succ_e,Succinate exchange,NA,,0,
+FBA,fructose-bisphosphate aldolase,NA,b1773 or b2097 or b2925,3,4.936850976503062
+FBP,fructose-bisphosphatase,NA,b3925 or b4232,2,4.2635130696280825
+FORt2,formate transport in via proton symport,NA,b0904 or b2492,2,9.441600182038796
+FORti,formate transport via diffusion,NA,b0904 or b2492,2,9.441600182038796
+FRD7,fumarate reductase,NA,b4153 and b4151 and b4152 and b4154,4,1.1561839507929572
+FRUpts2,R Fructose transport via PEPPyr PTS-f6p - generating,NA,b2415 and b1818 and b1817 and b1819 and b2416,5,2.504553653965067
+FUM,fumarase,NA,b4122 or b1612 or b1611,3,6.128945257629677
+FUMt2_2,R Fumarate transport via proton symport-2 - H,NA,b3528,1,8.263408005068332
+G6PDH2r,glucose 6-phosphate dehydrogenase,NA,b1852,1,6.030601284109274
+GAPD,glyceraldehyde-3-phosphate dehydrogenase,NA,b1779,1,5.450680064664649
+GLCpts,D-glucose transport via PEP:Pyr PTS,NA,(b2415 and b1818 and b1817 and b1819 and b2416) or (b2415 and b2417 and b1101 and b2416) or (b2415 and b2417 and b1621 and b2416),8,2.504553653965067
+GLNS,glutamine synthetase,NA,b3870 or b1297,2,8.754568417951749
+GLNabc,GLNabc,NA,b0810 and b0811 and b0809,3,5.104223374780111
+GLUDy,glutamate dehydrogenase (NADP),NA,b1761,1,6.249035020955999
+GLUN,glutaminase,NA,b0485 or b1812 or b1524,3,8.423424376202572
+GLUSy,glutamate synthase (NADPH),NA,b3212 and b3213,2,2.4366637453687403
+GLUt2r,R L glutamate transport via proton - symport-reversible,NA,b4077,1,1.9422296057877086
+GND,phosphogluconate dehydrogenase,NA,b2029,1,5.724569574914731
+H2Ot,R H2O transport via - diffusion,NA,b0875 or s0001,2,2.268514535642031
+ICDHyr,isocitrate dehydrogenase (NADP),NA,b1136,1,8.853268262751396
+ICL,Isocitrate lyase,NA,b4015,1,6.272489720512687
+LDH_D,D-lactate dehydrogenase,NA,b2133 or b1380,2,7.234163581899548
+MALS,malate synthase,NA,b4014 or b2976,2,5.9443187944504245
+MALt2_2,R Malate transport via proton symport-2 - H,NA,b3528,1,8.263408005068332
+MDH,malate dehydrogenase,NA,b3236,1,1.5895964414472274
+ME1,malic enzyme (NAD),NA,b1479,1,1.530705151247731
+ME2,malic enzyme (NADP),NA,b2463,1,6.955295287709109
+NADH16,NADH dehydrogenase (ubiquinone-8 & 3 protons),NA,b2287 and b2285 and b2283 and b2281 and b2279 and b2277 and b2276 and b2278 and b2280 and b2282 and b2284 and b2286 and b2288,13,0.43591463799040553
+NADTRHD,NAD transhydrogenase,NA,b3962 or (b1602 and b1603),3,7.625478137854338
+NH4t,R ammonia reversible - transport,NA,s0001 or b0451,2,2.268514535642031
+O2t,R o2 - transport-diffusion,NA,s0001,1,2.268514535642031
+PDH,pyruvate dehydrogenase,NA,b0115 and b0114 and b0116,3,2.408558977236245
+PFK,phosphofructokinase,NA,b3916 or b1723,2,5.131281541990021
+PFL,pyruvate formate lyase,NA,(b0902 and b3114) or (b0903 and b0902 and b2579) or (b0902 and b0903) or (b3951 and b3952),6,6.615643366662437
+PGI,glucose-6-phosphate isomerase,NA,b4025,1,5.532573447967134
+PGK,phosphoglycerate kinase,NA,b2926,1,8.544524875245047
+PGL,6-phosphogluconolactonase,NA,b0767,1,3.848378112757611
+PGM,phosphoglycerate mutase,NA,b4395 or b3612 or b0755,3,3.542646755916785
+PIt2r,R phosphate reversible transport via - symport,NA,b2987 or b3493,2,8.291126345018904
+PPC,phosphoenolpyruvate carboxylase,NA,b3956,1,5.523700752940731
+PPCK,phosphoenolpyruvate carboxykinase,NA,b3403,1,5.78551468108833
+PPS,phosphoenolpyruvate synthase,NA,b1702,1,5.215330593973323
+PTAr,phosphotransacetylase,NA,b2297 or b2458,2,9.8834541928282
+PYK,pyruvate kinase,NA,b1854 or b1676,2,9.053415756616099
+PYRt2,R pyruvate transport in via proton - symport,NA,,0,
+RPE,ribulose 5-phosphate 3-epimerase,NA,b3386 or b4301,2,5.200101530724835
+RPI,ribose-5-phosphate isomerase,NA,b2914 or b4090,2,9.836308849117232
+SUCCt2_2,R succinate transport via proton symport-2 - H,NA,b3528,1,8.263408005068332
+SUCCt3,succinate transport out via proton antiport,NA,,0,
+SUCDi,succinate dehydrogenase (irreversible),NA,b0723 and b0721 and b0722 and b0724,4,2.575420641540831
+SUCOAS,succinyl-CoA synthetase (ADP-forming),NA,b0728 and b0729,2,1.6106901442921484
+TALA,transaldolase,NA,b2464 or b0008,2,8.658644583032647
+THD2,R NAD - P-transhydrogenase,NA,b1602 and b1603,2,5.931769165622212
+TKT1,transketolase,NA,b2935 or b2465,2,9.835216092035555
+TKT2,transketolase,NA,b2935 or b2465,2,9.835216092035555
+TPI,triose-phosphate isomerase,NA,b3919,1,4.283472747009492
