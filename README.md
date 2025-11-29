@@ -12,7 +12,8 @@ Day 9: Explored the feasible flux space via randomized sampling and visualized f
 Day 10: Nutrient-scan trade-off analysis  
 Day 11: Implemented multi-objective FBA by constraining biomass to a fixed fraction of its maximum value and optimizing product secretion, generating a full biomass–product Pareto frontier for metabolic trade-off analysis.  
 Day 12 – Reaction-level metabolic rewiring: WT vs Pareto model  
-Day 13: Computed reaction-level metabolic activity by mapping gene expression onto GPR rules, converting pseudo-bulk (or mock) gene expression into reaction expression values to enable expression-constrained metabolic modeling.
+Day 13: Computed reaction-level metabolic activity by mapping gene expression onto GPR rules, converting pseudo-bulk (or mock) gene expression into reaction expression values to enable expression-constrained metabolic modeling.  
+Day 14: Applied gene-expression–based flux bound scaling (E-Flux) and compared WT vs expression-constrained fluxes to reveal expression-driven metabolic rewiring.  
 
 
 
