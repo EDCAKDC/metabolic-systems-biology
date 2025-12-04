@@ -17,6 +17,7 @@ Day 14: Applied gene-expression–based flux bound scaling (E-Flux) and compared
 Day 15: Performed subsystem-level flux rewiring analysis (WT vs E-Flux); results appear flat because Day 13 used random mock expression, so the plots are not biologically meaningful.  
 Day 16: Built real T-cell pseudo-bulk expression (Blood/Core/Edge) for downstream expression-constrained metabolic modeling.  
 Day 17: Computed reaction-level metabolic activity from real T-cell pseudo-bulk expression (Blood/Core/Edge) by mapping gene symbols to Ensembl IDs and evaluating GPR rules.  
+Day 18: Applied E-Flux using reaction-level expression (Blood/Core/Edge) to generate expression-constrained flux distributions and compare biomass capacities across samples.  
 
 
 
