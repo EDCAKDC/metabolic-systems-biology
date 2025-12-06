@@ -19,6 +19,7 @@ Day 16: Built real T-cell pseudo-bulk expression (Blood/Core/Edge) for downstrea
 Day 17: Computed reaction-level metabolic activity from real T-cell pseudo-bulk expression (Blood/Core/Edge) by mapping gene symbols to Ensembl IDs and evaluating GPR rules.  
 Day 18: Applied E-Flux using reaction-level expression (Blood/Core/Edge) to generate expression-constrained flux distributions and compare biomass capacities across samples.  
 Day 19: Quantified metabolic flux rewiring across Blood/Core/Edge by comparing E-Flux solutions at reaction and subsystem levels, identifying pathways with the largest |log₂FC| shifts.  
+Day 20: Performed PCA and subsystem-level metabolic signature analysis across Blood/Core/Edge to identify global flux patterns, revealing a metabolic activation gradient from Blood → TumorEdge → TumorCore.  
 
 
 
