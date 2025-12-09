@@ -45,6 +45,9 @@ Day 21: Performed single-reaction knockout (KO) essentiality screening under E-F
 
 Day 22: Applied TME-specific nutrient uptake constraints on top of expression-constrained E-Flux models to simulate Blood, TumorEdge, and TumorCore T-cell metabolism under physiologically realistic microenvironment conditions.  
 
+Day 23: Fixed the Human-GEM exchange reaction IDs and successfully activated true TME nutrient constraints, enabling a correct rich vs TME metabolic comparison for downstream flux and pathway analysis.  
+
+
 
 
 
