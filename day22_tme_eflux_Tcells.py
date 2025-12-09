@@ -59,10 +59,10 @@ print("Samples found:", samples)
 #
 # Below are example IDs; replace if needed.
 
-GLC_EX_ID = "EX_glc_D"   # glucose exchange reaction ID
-O2_EX_ID  = "EX_o2"      # oxygen exchange reaction ID
-GLN_EX_ID = "EX_gln_L"   # glutamine exchange reaction ID
-LAC_EX_ID = "EX_lac_L"   # lactate exchange (optional, for lactate uptake control)
+GLC_EX_ID = "MAR09034"   # glucose exchange reaction ID
+O2_EX_ID  = "MAR09048"      # oxygen exchange reaction ID
+GLN_EX_ID = "MAR09063"   # glutamine exchange reaction ID
+LAC_EX_ID = "MAR09135"   # lactate exchange (optional, for lactate uptake control)
 
 
 def set_environment_TME(m, scenario):
@@ -261,4 +261,6 @@ if biomass_records:
     print(f"\nSaved biomass summary: {biomass_out}")
 
 print("\nDay22 TME-constrained E-Flux analysis completed.")
+
+
 
