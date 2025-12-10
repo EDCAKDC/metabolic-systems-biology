@@ -47,6 +47,8 @@ Day 22: Applied TME-specific nutrient uptake constraints on top of expression-co
 
 Day 23: Fixed the Human-GEM exchange reaction IDs and successfully activated true TME nutrient constraints, enabling a correct rich vs TME metabolic comparison for downstream flux and pathway analysis.  
 
+Day 24: Performed single-reaction knockout screening under true TME-constrained E-Flux conditions to identify TME-specific essential metabolic reactions in Blood, TumorEdge, and TumorCore T cells.  
+
 
 
 
