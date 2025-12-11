@@ -49,6 +49,8 @@ Day 23: Fixed the Human-GEM exchange reaction IDs and successfully activated tru
 
 Day 24: Performed single-reaction knockout screening under true TME-constrained E-Flux conditions to identify TME-specific essential metabolic reactions in Blood, TumorEdge, and TumorCore T cells.  
 
+Day 25: Compared rich vs TME essentiality and identified that Blood shows no TME-specific essential reactions, while TumorEdge and TumorCore reveal environment-induced metabolic vulnerabilities.  
+
 
 
 
