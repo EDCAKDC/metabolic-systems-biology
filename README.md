@@ -51,6 +51,9 @@ Day 24: Performed single-reaction knockout screening under true TME-constrained 
 
 Day 25: Compared rich vs TME essentiality and identified that Blood shows no TME-specific essential reactions, while TumorEdge and TumorCore reveal environment-induced metabolic vulnerabilities.  
 
+Day 26: Computed essentiality classes and subsystem summaries across Blood, TumorEdge, and TumorCore; found no rich-only or TME-only essential reactions, showing that TME impacts flux rewiring rather than creating new lethal points.  
+
+
 
 
 
