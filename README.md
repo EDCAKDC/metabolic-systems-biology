@@ -53,6 +53,8 @@ Day 25: Compared rich vs TME essentiality and identified that Blood shows no TME
 
 Day 26: Computed essentiality classes and subsystem summaries across Blood, TumorEdge, and TumorCore; found no rich-only or TME-only essential reactions, showing that TME impacts flux rewiring rather than creating new lethal points.  
 
+Day 27: Implemented literature-inspired nutrient bounds for rich, tumor edge, and tumor core environments, combined them with reaction-level expression using E-Flux, and simulated realistic TME-constrained T-cell metabolism across Blood, TumorEdge, and TumorCore samples.  
+
 
 
 
