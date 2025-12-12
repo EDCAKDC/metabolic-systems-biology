@@ -1,0 +1,4 @@
+sample,scenario,status,biomass
+Blood,Rich,optimal,1.036096799708967
+TumorCore,TME_core,optimal,1.14956182771874
+TumorEdge,TME_edge,optimal,1.106473322376394

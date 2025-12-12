@@ -1,0 +1,16 @@
+scenario,reaction_id,reaction_name,new_lower_bound
+Rich,MAR09034,Exchange of glucose,-10.0
+Rich,MAR09063,Exchange of glutamine,-10.0
+Rich,MAR09048,Exchange of O2,-20.0
+Rich,MAR09135,Exchange of L-lactate,0.0
+Rich,MAR09136,Exchange of D-lactate,0.0
+TME_core,MAR09034,Exchange of glucose,-1.0
+TME_core,MAR09063,Exchange of glutamine,-1.0
+TME_core,MAR09048,Exchange of O2,-2.0
+TME_core,MAR09135,Exchange of L-lactate,-10.0
+TME_core,MAR09136,Exchange of D-lactate,-10.0
+TME_edge,MAR09034,Exchange of glucose,-3.0
+TME_edge,MAR09063,Exchange of glutamine,-3.0
+TME_edge,MAR09048,Exchange of O2,-8.0
+TME_edge,MAR09135,Exchange of L-lactate,-5.0
+TME_edge,MAR09136,Exchange of D-lactate,-5.0
