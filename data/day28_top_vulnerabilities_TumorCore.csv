@@ -1,0 +1,51 @@
+sample,scenario,reaction_id,reaction_name,subsystem,baseline_biomass,baseline_flux,ko_biomass,rel_drop,is_essential_TME,is_strong_sensitive_TME
+TumorCore,TME_core,MAR04204,ATP:thiamine diphosphotransferase,Thiamine metabolism,1.14956182771874,4.759185966755585e-05,-1.265446924848027e-11,1.000000000011008,True,False
+TumorCore,TME_core,MAR07786,,Transport reactions,1.14956182771874,0.02325793489840555,-1.7349970563443475e-14,1.000000000000015,True,False
+TumorCore,TME_core,MAR05423,,Transport reactions,1.14956182771874,0.03876322483067591,-1.0908103019890733e-14,1.0000000000000095,True,False
+TumorCore,TME_core,MAR06687,,Retinol metabolism,1.14956182771874,4.759185966755585e-05,-6.401335176607691e-15,1.0000000000000056,True,False
+TumorCore,TME_core,MAR00579,acyl-CoA:sn-glycerol-3-phosphate 1-O-acyltransferase,Glycerophospholipid metabolism,1.14956182771874,0.012866723660344104,-6.427809775933372e-15,1.0000000000000056,True,False
+TumorCore,TME_core,MAR06677,,Retinol metabolism,1.14956182771874,2.3726956124114794e-05,-2.148881017694298e-15,1.000000000000002,True,False
+TumorCore,TME_core,MAR05130,L-Tyrosine:tRNA(Tyr) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.14956182771874,0.1724155937781106,-1.7194462374686497e-15,1.0000000000000016,True,False
+TumorCore,TME_core,MAR06634,,Retinol metabolism,1.14956182771874,4.759185966755584e-05,-1.1831699800257033e-15,1.0000000000000009,True,False
+TumorCore,TME_core,MAR02142,,Vitamin D metabolism,1.14956182771874,2.3726956124114794e-05,-5.77692835050252e-16,1.0000000000000007,True,False
+TumorCore,TME_core,MAR06629,,Transport reactions,1.14956182771874,7.11808683723444e-05,-3.561940586187362e-16,1.0000000000000004,True,False
+TumorCore,TME_core,MAR08617,Triphosphate phosphohydrolase,Miscellaneous,1.14956182771874,4.759185966755585e-05,-2.7084635421275963e-16,1.0000000000000002,True,False
+TumorCore,TME_core,MAR06438,,Transport reactions,1.14956182771874,-4.7591859667555836e-05,-2.8133739025851413e-16,1.0000000000000002,True,False
+TumorCore,TME_core,MAR05145,L-Phenylalanine:tRNA(Ala) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.14956182771874,0.22579693420051497,-2.4635088244796603e-16,1.0000000000000002,True,False
+TumorCore,TME_core,MAR06454,,Transport reactions,1.14956182771874,4.7591859667555836e-05,-1.3558793707053532e-16,1.0000000000000002,True,False
+TumorCore,TME_core,MAR06436,,Vitamin E metabolism,1.14956182771874,4.7591859667555836e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR06682,,Retinol metabolism,1.14956182771874,4.759185966755584e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR05131,L-Alanine:tRNA(Ala) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.14956182771874,0.49147647906144687,0.0,1.0,True,False
+TumorCore,TME_core,MAR06700,,Retinol metabolism,1.14956182771874,2.37269561241148e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR06701,,Retinol metabolism,1.14956182771874,2.3726956124114794e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR06702,,Retinol metabolism,1.14956182771874,2.3726956124114794e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR06703,,Retinol metabolism,1.14956182771874,2.3726956124114794e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR09608,,Transport reactions,1.14956182771874,4.759185966755584e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR06641,,Retinol metabolism,1.14956182771874,2.3726956124114794e-05,-9.031775887216325e-17,1.0,True,False
+TumorCore,TME_core,MAR06642,,Retinol metabolism,1.14956182771874,2.3726956124114797e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR04371,"3-phospho-D-glycerate 1,2-phosphomutase",Glycolysis / Gluconeogenesis,1.14956182771874,0.000778138401182815,5.249594248526489e-17,1.0,True,False
+TumorCore,TME_core,MAR08616,ATP:cob(I)alamin Co-beta-adenosyltransferase,Vitamin B12 metabolism,1.14956182771874,4.759185966755585e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR08615,ATP:cob(I)alamin Co-beta-adenosyltransferase,Vitamin B12 metabolism,1.14956182771874,4.759185966755584e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR05148,L-Threonine:tRNA(Thr) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.14956182771874,0.32826456466650955,0.0,1.0,True,False
+TumorCore,TME_core,MAR05147,L-Serine:tRNA(Ser) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.14956182771874,0.40557547148516415,0.0,1.0,True,False
+TumorCore,TME_core,MAR05146,L-proline:tRNA(Pro) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.14956182771874,0.31292509902788757,0.0,1.0,True,False
+TumorCore,TME_core,MAR08614,,Transport reactions,1.14956182771874,4.759185966755585e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR10062,Protein pool for biomass reaction,Artificial reactions,1.14956182771874,6.135786255448776,0.0,1.0,True,False
+TumorCore,TME_core,MAR13086,,Transport reactions,1.14956182771874,0.1292107494355864,0.0,1.0,True,False
+TumorCore,TME_core,MAR00581,,Glycerophospholipid metabolism,1.14956182771874,0.012866723660344102,0.0,1.0,True,False
+TumorCore,TME_core,MAR00598,"1,2-diacyl-sn-glycerol 3-phosphate phosphohydrolase",Glycerophospholipid metabolism,1.14956182771874,4.759185966755584e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR00580,acyl-CoA:1-acyl-sn-glycerol-3-phosphate 2-O-acyltransferase,Glycerophospholipid metabolism,1.14956182771874,0.012866723660344104,0.0,1.0,True,False
+TumorCore,TME_core,MAR02136,,Vitamin D metabolism,1.14956182771874,2.3726956124114797e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR02135,,Vitamin D metabolism,1.14956182771874,2.3726956124114797e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR02134,,Vitamin D metabolism,1.14956182771874,2.3726956124114804e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR02143,,Vitamin D metabolism,1.14956182771874,2.3726956124114794e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR02131,,Vitamin D metabolism,1.14956182771874,2.3726956124114797e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR02129,,Vitamin D metabolism,1.14956182771874,2.37269561241148e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR10063,Lipid pool for biomass reaction,Artificial reactions,1.14956182771874,0.25428307629138536,0.0,1.0,True,False
+TumorCore,TME_core,MAR10064,Small metabolite pool for biomass reaction,Artificial reactions,1.14956182771874,0.5558131437020107,0.0,1.0,True,False
+TumorCore,TME_core,MAR10065,Cofactors and vitamins pool for biomass reaction,Artificial reactions,1.14956182771874,0.001379474193262488,0.0,1.0,True,False
+TumorCore,TME_core,MAR06664,,Retinol metabolism,1.14956182771874,2.3726956124114794e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR06665,,Retinol metabolism,1.14956182771874,2.3726956124114794e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR02145,,Vitamin D metabolism,1.14956182771874,2.372695612411479e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR02144,,Vitamin D metabolism,1.14956182771874,2.3726956124114794e-05,0.0,1.0,True,False
+TumorCore,TME_core,MAR10023,,Transport reactions,1.14956182771874,1.14956182771874,0.0,1.0,True,False

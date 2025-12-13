@@ -1,0 +1,51 @@
+sample,scenario,reaction_id,reaction_name,subsystem,baseline_biomass,baseline_flux,ko_biomass,rel_drop,is_essential_TME,is_strong_sensitive_TME
+TumorEdge,TME_edge,MAR04204,ATP:thiamine diphosphotransferase,Thiamine metabolism,1.106473322376394,4.5807995546739756e-05,-8.20660680624975e-12,1.000000000007417,True,False
+TumorEdge,TME_edge,MAR05145,L-Phenylalanine:tRNA(Ala) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.21733348998117133,-1.541828149328014e-14,1.0000000000000138,True,False
+TumorEdge,TME_edge,MAR06634,,Retinol metabolism,1.106473322376394,4.580799554638271e-05,-9.713879562037433e-15,1.0000000000000089,True,False
+TumorEdge,TME_edge,MAR06664,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,-4.6307139098551675e-15,1.0000000000000042,True,False
+TumorEdge,TME_edge,MAR08613,,Vitamin B12 metabolism,1.106473322376394,2.290399777319136e-05,-7.248962503287921e-16,1.0000000000000007,True,False
+TumorEdge,TME_edge,MAR06668,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,-4.432966851208537e-16,1.0000000000000004,True,False
+TumorEdge,TME_edge,MAR08617,Triphosphate phosphohydrolase,Miscellaneous,1.106473322376394,4.5807995546382715e-05,-5.10035342348702e-16,1.0000000000000004,True,False
+TumorEdge,TME_edge,MAR07861,,Transport reactions,1.106473322376394,0.008862851312234916,-2.679646701970595e-16,1.0000000000000002,True,False
+TumorEdge,TME_edge,MAR06649,,Retinol metabolism,1.106473322376394,2.2837609373848773e-05,-3.2074234106416294e-16,1.0000000000000002,True,False
+TumorEdge,TME_edge,MAR06436,,Vitamin E metabolism,1.106473322376394,4.58079955463827e-05,-1.9242361019444272e-16,1.0000000000000002,True,False
+TumorEdge,TME_edge,MAR05423,,Transport reactions,1.106473322376394,0.037310280430532014,-2.1639846646013988e-16,1.0000000000000002,True,False
+TumorEdge,TME_edge,MAR02134,,Vitamin D metabolism,1.106473322376394,2.2837609373848773e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR02135,,Vitamin D metabolism,1.106473322376394,2.2837609373848773e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR08615,ATP:cob(I)alamin Co-beta-adenosyltransferase,Vitamin B12 metabolism,1.106473322376394,4.5807995546382715e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR02136,,Vitamin D metabolism,1.106473322376394,2.2837609373848773e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR09608,,Transport reactions,1.106473322376394,4.580799554638271e-05,6.488754394050046e-17,1.0,True,False
+TumorEdge,TME_edge,MAR00598,"1,2-diacyl-sn-glycerol 3-phosphate phosphohydrolase",Glycerophospholipid metabolism,1.106473322376394,4.580799554638271e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR02143,,Vitamin D metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06657,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06658,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR00581,,Glycerophospholipid metabolism,1.106473322376394,0.010034827855295997,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR05148,L-Threonine:tRNA(Thr) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.3159603726628442,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR05147,L-Serine:tRNA(Ser) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.3903734697759627,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR05146,L-proline:tRNA(Pro) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.3011958692673841,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06655,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR02144,,Vitamin D metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR02145,,Vitamin D metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06438,,Transport reactions,1.106473322376394,-4.58079955463827e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06665,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR08616,ATP:cob(I)alamin Co-beta-adenosyltransferase,Vitamin B12 metabolism,1.106473322376394,4.5807995546382715e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR05131,L-Alanine:tRNA(Ala) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.4730546887905386,-3.465335389086716e-17,1.0,True,False
+TumorEdge,TME_edge,MAR05132,L-Arginine:tRNA(Arg) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.302377029539021,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06453,,Vitamin E metabolism,1.106473322376394,4.5807995546382694e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06703,,Retinol metabolism,1.106473322376394,2.2837609373848767e-05,-1.4498593796414636e-29,1.0,True,False
+TumorEdge,TME_edge,MAR10023,,Transport reactions,1.106473322376394,1.1064733223763938,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR02131,,Vitamin D metabolism,1.106473322376394,2.2837609373848773e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06700,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06701,,Retinol metabolism,1.106473322376394,2.2837609373848767e-05,-3.3586205359238404e-20,1.0,True,False
+TumorEdge,TME_edge,MAR06702,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,6.959507578529873e-21,1.0,True,False
+TumorEdge,TME_edge,MAR02139,,Vitamin D metabolism,1.106473322376394,2.283760937384877e-05,-9.176113694158762e-17,1.0,True,False
+TumorEdge,TME_edge,MAR06642,,Retinol metabolism,1.106473322376394,2.283760937384877e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR02129,,Vitamin D metabolism,1.106473322376394,2.2837609373848777e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR00578,,Transport reactions,1.106473322376394,0.020069655710591994,-8.206831433669917e-17,1.0,True,False
+TumorEdge,TME_edge,MAR08614,,Transport reactions,1.106473322376394,4.580799554638272e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR06693,,Retinol metabolism,1.106473322376394,4.58079955463827e-05,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR05143,L-Methionine:tRNAMet ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.1311087901516849,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR05142,L-lysine:tRNALys ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.42462711765342986,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR05141,L-Leucine:tRNA(Leu) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.106473322376394,0.5380185037305627,0.0,1.0,True,False
+TumorEdge,TME_edge,MAR10063,Lipid pool for biomass reaction,Artificial reactions,1.106473322376394,0.2447518989096584,3.392519601536635e-48,1.0,True,False
+TumorEdge,TME_edge,MAR06692,,Retinol metabolism,1.106473322376394,4.580799554638271e-05,0.0,1.0,True,False

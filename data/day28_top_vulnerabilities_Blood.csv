@@ -1,0 +1,51 @@
+sample,scenario,reaction_id,reaction_name,subsystem,baseline_biomass,baseline_flux,ko_biomass,rel_drop,is_essential_TME,is_strong_sensitive_TME
+Blood,Rich,MAR04269,ATP:NAD+ 2'-phosphotransferase,Nicotinate and nicotinamide metabolism,1.036096799708967,0.0003005716815953085,-4.704016585789708e-12,1.0000000000045401,True,False
+Blood,Rich,MAR06453,,Vitamin E metabolism,1.036096799708967,4.289440750795122e-05,-3.4649058654201384e-13,1.0000000000003344,True,False
+Blood,Rich,MAR06454,,Transport reactions,1.036096799708967,4.2894407507951225e-05,-2.633760778216026e-13,1.0000000000002542,True,False
+Blood,Rich,MAR10064,Small metabolite pool for biomass reaction,Artificial reactions,1.036096799708967,0.5009528026592853,-2.530498747765647e-14,1.0000000000000244,True,False
+Blood,Rich,MAR08617,Triphosphate phosphohydrolase,Miscellaneous,1.036096799708967,4.2894407507951225e-05,-1.4407619050070937e-14,1.000000000000014,True,False
+Blood,Rich,MAR07786,,Transport reactions,1.036096799708967,0.02096231045171182,-1.3823128088486119e-14,1.0000000000000133,True,False
+Blood,Rich,MAR06677,,Retinol metabolism,1.036096799708967,2.1385037945993074e-05,-1.0998317278508293e-14,1.0000000000000107,True,False
+Blood,Rich,MAR02142,,Vitamin D metabolism,1.036096799708967,2.1385037945993074e-05,-4.999531831879026e-15,1.0000000000000049,True,False
+Blood,Rich,MAR02133,,Vitamin D metabolism,1.036096799708967,2.1385037945993078e-05,-4.223989264202143e-15,1.000000000000004,True,False
+Blood,Rich,MAR08612,,Transport reactions,1.036096799708967,4.289440750795124e-05,-2.8795401577179116e-15,1.0000000000000029,True,False
+Blood,Rich,MAR06438,,Transport reactions,1.036096799708967,-4.289440750795122e-05,-2.3156231352047474e-15,1.0000000000000022,True,False
+Blood,Rich,MAR04371,"3-phospho-D-glycerate 1,2-phosphomutase",Glycolysis / Gluconeogenesis,1.036096799708967,0.0007013339237229995,-1.664871318818411e-15,1.0000000000000016,True,False
+Blood,Rich,MAR06668,,Retinol metabolism,1.036096799708967,2.1385037945993078e-05,-8.165861370446101e-16,1.0000000000000009,True,False
+Blood,Rich,MAR06654,,Retinol metabolism,1.036096799708967,2.1385037945993074e-05,-7.113781972810828e-16,1.0000000000000007,True,False
+Blood,Rich,MAR06634,,Retinol metabolism,1.036096799708967,4.289440750795123e-05,-4.916368410152452e-16,1.0000000000000004,True,False
+Blood,Rich,MAR06687,,Retinol metabolism,1.036096799708967,4.289440750795124e-05,-3.8880163412213737e-16,1.0000000000000004,True,False
+Blood,Rich,MAR06664,,Retinol metabolism,1.036096799708967,2.1385037945993074e-05,-4.1426487057196923e-16,1.0000000000000004,True,False
+Blood,Rich,MAR02144,,Vitamin D metabolism,1.036096799708967,2.1385037945993074e-05,0.0,1.0,True,False
+Blood,Rich,MAR08613,,Vitamin B12 metabolism,1.036096799708967,2.144720375397562e-05,0.0,1.0,True,False
+Blood,Rich,MAR02136,,Vitamin D metabolism,1.036096799708967,2.1385037945993078e-05,0.0,1.0,True,False
+Blood,Rich,MAR02135,,Vitamin D metabolism,1.036096799708967,2.1385037945993074e-05,0.0,1.0,True,False
+Blood,Rich,MAR02134,,Vitamin D metabolism,1.036096799708967,2.138503794599308e-05,0.0,1.0,True,False
+Blood,Rich,MAR05132,L-Arginine:tRNA(Arg) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.036096799708967,0.28314453342446655,0.0,1.0,True,False
+Blood,Rich,MAR05133,L-Asparagine:tRNA(Asn) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.036096799708967,0.2073812500667479,0.0,1.0,True,False
+Blood,Rich,MAR05134,L-Aspartate:tRNA(Asp) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.036096799708967,0.30747726676563164,0.0,1.0,True,False
+Blood,Rich,MAR05135,L-Cysteine:tRNA(Cys) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.036096799708967,0.10120205003257297,0.0,1.0,True,False
+Blood,Rich,MAR02145,,Vitamin D metabolism,1.036096799708967,2.1385037945993074e-05,0.0,1.0,True,False
+Blood,Rich,MAR06703,,Retinol metabolism,1.036096799708967,2.1385037945993074e-05,0.0,1.0,True,False
+Blood,Rich,MAR07160,Deoxynucleoside triphosphate:DNA deoxynucleotidyltransferase,Nucleotide metabolism,1.036096799708967,0.027663784552229415,0.0,1.0,True,False
+Blood,Rich,MAR07161,nucleoside-triphosphate:RNA nucleotidyltransferase (DNA-directed),Nucleotide metabolism,1.036096799708967,0.11645728028728788,0.0,1.0,True,False
+Blood,Rich,MAR06690,,Retinol metabolism,1.036096799708967,-4.289440750795121e-05,1.2594354695025375e-19,1.0,True,False
+Blood,Rich,MAR06691,,Retinol metabolism,1.036096799708967,-4.2894407507951225e-05,0.0,1.0,True,False
+Blood,Rich,MAR06692,,Retinol metabolism,1.036096799708967,4.2894407507951225e-05,0.0,1.0,True,False
+Blood,Rich,MAR06642,,Retinol metabolism,1.036096799708967,2.1385037945993078e-05,0.0,1.0,True,False
+Blood,Rich,MAR06701,,Retinol metabolism,1.036096799708967,2.1385037945993074e-05,0.0,1.0,True,False
+Blood,Rich,MAR06702,,Retinol metabolism,1.036096799708967,2.138503794599307e-05,0.0,1.0,True,False
+Blood,Rich,MAR05131,L-Alanine:tRNA(Ala) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.036096799708967,0.44296635014257346,0.0,1.0,True,False
+Blood,Rich,MAR05146,L-proline:tRNA(Pro) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.036096799708967,0.28203850009077713,0.0,1.0,True,False
+Blood,Rich,MAR02143,,Vitamin D metabolism,1.036096799708967,2.1385037945993074e-05,0.0,1.0,True,False
+Blood,Rich,MAR10065,Cofactors and vitamins pool for biomass reaction,Artificial reactions,1.036096799708967,0.0012433161596507602,0.0,1.0,True,False
+Blood,Rich,MAR06678,,Retinol metabolism,1.036096799708967,2.1385037945993078e-05,0.0,1.0,True,False
+Blood,Rich,MAR10063,Lipid pool for biomass reaction,Artificial reactions,1.036096799708967,0.22918461209562352,0.0,1.0,True,False
+Blood,Rich,MAR06436,,Vitamin E metabolism,1.036096799708967,4.289440750795122e-05,0.0,1.0,True,False
+Blood,Rich,MAR06693,,Retinol metabolism,1.036096799708967,4.289440750795122e-05,0.0,1.0,True,False
+Blood,Rich,MAR00579,acyl-CoA:sn-glycerol-3-phosphate 1-O-acyltransferase,Glycerophospholipid metabolism,1.036096799708967,0.0046982845479602835,2.748579044963812e-17,1.0,True,False
+Blood,Rich,MAR08614,,Transport reactions,1.036096799708967,4.2894407507951245e-05,0.0,1.0,True,False
+Blood,Rich,MAR10062,Protein pool for biomass reaction,Artificial reactions,1.036096799708967,5.530166668446611,0.0,1.0,True,False
+Blood,Rich,MAR00598,"1,2-diacyl-sn-glycerol 3-phosphate phosphohydrolase",Glycerophospholipid metabolism,1.036096799708967,4.2894407507951225e-05,0.0,1.0,True,False
+Blood,Rich,MAR00580,acyl-CoA:1-acyl-sn-glycerol-3-phosphate 2-O-acyltransferase,Glycerophospholipid metabolism,1.036096799708967,0.0046982845479602835,0.0,1.0,True,False
+Blood,Rich,MAR05147,L-Serine:tRNA(Ser) ligase (AMP-forming),Aminoacyl-tRNA biosynthesis,1.036096799708967,0.3655440167843211,0.0,1.0,True,False
