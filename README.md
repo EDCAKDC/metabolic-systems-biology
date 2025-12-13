@@ -1,70 +1,51 @@
-# metabolic-systems-biology
-Learning Flux Balance Analysis (FBA) and metabolic modeling with COBRApy.   
+Learning Flux Balance Analysis (FBA) and Metabolic Modeling with COBRApy
 
-Day 1: first FBA script + flux visualization.  
+This project documents a stepwise, end-to-end learning and research pipeline for constraint-based metabolic modeling using COBRApy, progressing from foundational FBA concepts to realistic tumor microenvironment (TME)–constrained T-cell metabolic analysis.
 
-Day 2: Flux Variability Analysis (FVA) + knockout simulation.  
+Phase I – Core FBA and Network Analysis (Day 1–10)
 
-Day 3: reaction/gene essentiality scan + essentiality classification + basic visualization.  
+Goal: Build a rigorous foundation in constraint-based modeling, robustness analysis, and flux space interpretation.
 
-Day 4: FVA-based metabolic rewiring analysis after PFK knockout (Δ flux-range detection + top-perturbed reactions).  
+Day 1–3: Basic FBA implementation, flux visualization, FVA, reaction/gene essentiality scans, and essentiality classification.
 
-Day 5: robustness analysis (single-KO curve) + double knockout synthetic lethality mapping.  
+Day 4–6: Metabolic robustness and vulnerability analysis, including single- and double-knockout simulations, synthetic lethality mapping, and GPR-based gene knockouts.
 
-Day 6: gene knockout analysis (GPR-based single-gene KO) + gene essentiality classification + robustness curves + optional pathway-level gene KO.  
+Day 7: Construction of gene–reaction bipartite metabolic networks with essentiality annotations and topological vulnerability analysis.
 
-Day 7: Constructed a gene–reaction bipartite metabolic network, annotated nodes with essentiality from single-gene/reaction KO, computed topological centrality metrics, identified articulation-point vulnerabilities, and generated multiple network visualizations.  
+Day 8–10: Nutrient limitation modeling, robustness curves, trade-off analysis, and flux space exploration via sampling and PCA.
 
-Day 8: Modeled glucose-dependent growth by varying exchange-reaction bounds, showing classic linear limitation behavior in FBA.  
+Phase II – Advanced Flux Trade-offs and Expression Integration (Day 11–15)
 
-Day 9: Explored the feasible flux space via randomized sampling and visualized flux variability and PCA structure.  
+Goal: Understand metabolic trade-offs and incorporate transcriptomic information.
 
-Day 10: Nutrient-scan trade-off analysis  
+Day 11–12: Multi-objective FBA and Pareto frontier analysis to characterize biomass–product trade-offs.
 
-Day 11: Implemented multi-objective FBA by constraining biomass to a fixed fraction of its maximum value and optimizing product secretion, generating a full biomass–product Pareto frontier for metabolic trade-off analysis.  
+Day 13–15: Reaction-level expression mapping and E-Flux–based constraint integration; subsystem-level flux rewiring analysis (validated using mock expression data).
 
-Day 12 – Reaction-level metabolic rewiring: WT vs Pareto model  
+Phase III – T Cell–Specific Expression-Constrained Modeling (Day 16–20)
 
-Day 13: Computed reaction-level metabolic activity by mapping gene expression onto GPR rules, converting pseudo-bulk (or mock) gene expression into reaction expression values to enable expression-constrained metabolic modeling.  
+Goal: Apply expression-constrained modeling to real immune-cell data.
 
-Day 14: Applied gene-expression–based flux bound scaling (E-Flux) and compared WT vs expression-constrained fluxes to reveal expression-driven metabolic rewiring.  
+Day 16–18: Construction of real T-cell pseudo-bulk expression profiles (Blood, TumorEdge, TumorCore) and generation of expression-constrained flux distributions using E-Flux.
 
-Day 15: Performed subsystem-level flux rewiring analysis (WT vs E-Flux); results appear flat because Day 13 used random mock expression, so the plots are not biologically meaningful.  
+Day 19–20: Quantification of metabolic flux rewiring across microenvironments, including reaction-level log₂FC analysis, subsystem summaries, and PCA-based metabolic signature analysis, revealing a metabolic activation gradient from Blood → TumorEdge → TumorCore.
 
-Day 16: Built real T-cell pseudo-bulk expression (Blood/Core/Edge) for downstream expression-constrained metabolic modeling.  
+Phase IV – Tumor Microenvironment–Constrained Vulnerability Analysis (Day 21–28)
 
-Day 17: Computed reaction-level metabolic activity from real T-cell pseudo-bulk expression (Blood/Core/Edge) by mapping gene symbols to Ensembl IDs and evaluating GPR rules.  
+Goal: Identify how realistic TME nutrient constraints reshape T-cell metabolic robustness.
 
-Day 18: Applied E-Flux using reaction-level expression (Blood/Core/Edge) to generate expression-constrained flux distributions and compare biomass capacities across samples.  
+Integrated literature-inspired nutrient uptake bounds to simulate physiologically realistic Blood, TumorEdge, and TumorCore environments.
 
-Day 19: Quantified metabolic flux rewiring across Blood/Core/Edge by comparing E-Flux solutions at reaction and subsystem levels, identifying pathways with the largest |log₂FC| shifts.  
+Performed single-reaction knockout (KO) screening under expression- and TME-constrained models.
 
-Day 20: Performed PCA and subsystem-level metabolic signature analysis across Blood/Core/Edge to identify global flux patterns, revealing a metabolic activation gradient from Blood → TumorEdge → TumorCore.  
+Compared rich vs TME essentiality patterns to assess environment-induced vulnerability shifts.
 
-Day 21: Performed single-reaction knockout (KO) essentiality screening under E-Flux–constrained Blood/Core/Edge models to identify condition-specific metabolic vulnerabilities.  
+Demonstrated that TME constraints collapse metabolic buffering, leading to predominantly binary (essential) survival dependencies rather than creating new lethal reactions.
 
-Day 22: Applied TME-specific nutrient uptake constraints on top of expression-constrained E-Flux models to simulate Blood, TumorEdge, and TumorCore T-cell metabolism under physiologically realistic microenvironment conditions.  
+Current Focus and Next Steps
 
-Day 23: Fixed the Human-GEM exchange reaction IDs and successfully activated true TME nutrient constraints, enabling a correct rich vs TME metabolic comparison for downstream flux and pathway analysis.  
+Extend KO analyses to partial reaction inhibition to model pharmacologic perturbations.
 
-Day 24: Performed single-reaction knockout screening under true TME-constrained E-Flux conditions to identify TME-specific essential metabolic reactions in Blood, TumorEdge, and TumorCore T cells.  
+Replace biomass with functional objectives (ATP and nucleotide production).
 
-Day 25: Compared rich vs TME essentiality and identified that Blood shows no TME-specific essential reactions, while TumorEdge and TumorCore reveal environment-induced metabolic vulnerabilities.  
-
-Day 26: Computed essentiality classes and subsystem summaries across Blood, TumorEdge, and TumorCore; found no rich-only or TME-only essential reactions, showing that TME impacts flux rewiring rather than creating new lethal points.  
-
-Day 27: Implemented literature-inspired nutrient bounds for rich, tumor edge, and tumor core environments, combined them with reaction-level expression using E-Flux, and simulated realistic TME-constrained T-cell metabolism across Blood, TumorEdge, and TumorCore samples.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Identify environment-selective functional vulnerabilities across Blood, TumorEdge, and TumorCore.
