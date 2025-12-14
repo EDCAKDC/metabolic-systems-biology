@@ -1,0 +1,4 @@
+sample,scenario,alpha,n_records,n_near_essential,n_strong_sensitive
+Blood,Rich,0.5,11302,0,1
+TumorCore,TME_core,0.5,11302,0,1
+TumorEdge,TME_edge,0.5,11302,0,0
