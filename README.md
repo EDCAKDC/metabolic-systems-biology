@@ -48,4 +48,26 @@ Extend KO analyses to partial reaction inhibition to model pharmacologic perturb
 
 Replace biomass with functional objectives (ATP and nucleotide production).
 
-Identify environment-selective functional vulnerabilities across Blood, TumorEdge, and TumorCore.
+Identify environment-selective functional vulnerabilities across Blood, TumorEdge, and TumorCore.  
+
+Phase IV – Tumor Microenvironment–Constrained Vulnerability Analysis (Day 21–29)
+
+Goal: Identify how realistic TME nutrient constraints reshape T-cell metabolic robustness.
+
+Integrated literature-inspired nutrient uptake bounds to simulate physiologically realistic Blood, TumorEdge, and TumorCore environments.
+
+Performed single-reaction knockout (KO) screening under expression- and TME-constrained models.
+
+Compared rich vs TME essentiality patterns to assess environment-induced vulnerability shifts.
+
+Demonstrated that TME constraints collapse metabolic buffering, leading to predominantly binary (essential) survival dependencies rather than creating new lethal reactions.
+
+Day 29 – Partial inhibition analysis (pharmacologic proxy):
+
+Extended KO analysis to partial reaction inhibition (α = 0.5) to model graded, drug-like perturbations.
+
+Observed an almost complete absence of graded metabolic sensitivities across Blood, TumorEdge, and TumorCore.
+
+Partial inhibition failed to induce near-essential or strongly sensitive phenotypes, even under severe TME constraints.
+
+These results indicate that T-cell metabolism under realistic TME conditions operates in a binary survival regime, with reactions being either fully buffered or becoming lethal only upon complete inhibition.
