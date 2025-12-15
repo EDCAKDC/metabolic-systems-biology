@@ -70,26 +70,34 @@ Across Blood, TumorEdge, and TumorCore conditions, we observed a near-complete a
 
 Instead, most reactions remained fully buffered under partial inhibition and only became lethal upon complete loss of activity. These results indicate that T-cell metabolism under realistic TME conditions operates in a threshold-dominated, binary survival regime, rather than exhibiting smoothly graded vulnerabilities at the single-reaction level.
 
-Importantly, this collapse-like behavior reflects structural bottlenecks in the metabolic network rather than numerical artifacts, consistent with feasibility transitions expected in constraint-based models.
+Importantly, this collapse-like behavior reflects structural bottlenecks in the metabolic network rather than numerical artifacts, consistent with feasibility transitions expected in constraint-based models.  
 
-Computed maximal functional capacities under expression- and TME-constrained models.
+Day 30 – Functional objective analysis under realistic TME
 
-Revealed consistent environment-dependent functional hierarchies, with TumorCore exhibiting the highest functional capacity, followed by TumorEdge and Blood.
+To assess metabolic capabilities beyond growth, we replaced biomass maximization with functional metabolic objectives, including ATP and nucleotide (AMP, GMP, IMP, UMP, CTP) production.
 
-These results demonstrate that TME-induced metabolic reprogramming enhances specific functional outputs even under severe nutrient limitation, highlighting a decoupling between growth and functional metabolic capacity.
+Using expression- and TME-constrained models, we computed maximal functional capacities under each microenvironmental condition.
+
+Despite severe nutrient limitations, we uncovered a consistent environment-dependent hierarchy of functional capacity: TumorCore > TumorEdge > Blood. Notably, this hierarchy contrasts with growth-based outcomes, indicating that functional metabolic output can be enhanced even when proliferation is constrained.
+
+These results demonstrate a decoupling between growth optimization and functional metabolic capacity, highlighting TME-driven metabolic reprogramming as a mechanism that prioritizes specific functional outputs over maximal biomass accumulation.
 
 Day 31 – Robustness of functional capacity to growth constraints
 
-Evaluated functional capacities under fixed biomass constraints ranging from 60% to 90% of maximal growth to assess sensitivity to growth trade-offs.
+To test whether functional metabolic capacity depends on growth optimization, we evaluated ATP production capacity under fixed biomass constraints ranging from 60% to 90% of maximal growth.
 
-Observed that ATP production capacity remained nearly constant across a wide range of biomass constraints within each environment.
+Across all environments, ATP production capacity varied only minimally across a wide range of biomass constraints, displaying near-linear but shallow dependence on growth limitation.
 
-This robustness indicates that functional metabolic outputs are largely insensitive to moderate growth constraints and are instead primarily determined by microenvironmental and expression-driven constraints.
+This robustness indicates that functional metabolic outputs are largely insensitive to moderate growth trade-offs and are instead primarily governed by microenvironmental constraints and expression-driven flux limitations.
 
-Together, these analyses reveal a clear separation between growth optimization and functional metabolic potential under realistic TME conditions.
+Together with Day 30, these results establish that functional metabolic capacity is not a byproduct of growth optimization but represents an independently regulated metabolic dimension.
 
-Project Summary 
+Project Summary
 
-This project establishes a comprehensive, end-to-end computational framework for modeling T-cell metabolism under realistic tumor microenvironment constraints. By integrating genome-scale metabolic modeling, expression-based flux constraints, physiologically informed nutrient limitations, and systematic perturbation analyses, the study demonstrates that TME-constrained T-cell metabolism is governed by hard, threshold-driven bottlenecks rather than graded vulnerabilities.
+This project establishes a comprehensive, end-to-end computational framework for modeling T-cell metabolism under realistic tumor microenvironment constraints. By integrating genome-scale metabolic modeling, expression-based flux constraints, physiologically informed nutrient limitations, and systematic perturbation analyses, we characterize the organizing principles of TME-constrained T-cell metabolism.
 
-Across multiple analytical layers—global flux states, subsystem rewiring, essentiality screening, partial inhibition, and functional capacity analysis—the results consistently support a binary metabolic robustness regime. Importantly, functional metabolic capacity is shown to be decoupled from growth and robust to moderate biomass constraints, highlighting environment-driven metabolic reprogramming as a dominant organizing principle.
+Across multiple analytical layers—including global flux states, subsystem rewiring, essentiality screening, partial inhibition, and functional capacity analysis—the results consistently support a binary, threshold-driven metabolic robustness regime. Individual reactions exhibit limited graded sensitivity, remaining buffered under partial inhibition and collapsing only upon complete loss of activity.
+
+In contrast, functional metabolic capacity (e.g., ATP and nucleotide production) is shown to be decoupled from growth and robust to moderate biomass constraints. Instead, functional output is primarily determined by microenvironmental context and expression-driven metabolic reprogramming.
+
+Together, these findings reveal a clear separation between growth optimization and functional metabolic potential in T cells under tumor-like conditions, highlighting hard metabolic bottlenecks and environment-driven reprogramming as dominant principles shaping immune cell metabolism in the TME.
