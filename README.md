@@ -62,19 +62,15 @@ Compared rich vs TME essentiality patterns to assess environment-induced vulnera
 
 Demonstrated that TME constraints collapse metabolic buffering, leading to predominantly binary (essential) survival dependencies rather than creating new lethal reactions.
 
-Day 29 – Partial inhibition analysis (pharmacologic proxy):
+Day 29 – Partial inhibition analysis (pharmacologic proxy)
 
-Extended KO analysis to partial reaction inhibition (α = 0.5) to model graded, drug-like perturbations.
+We extended classical knockout (KO) essentiality analysis to partial reaction inhibition (α = 0.5), aiming to approximate graded, drug-like perturbations of individual metabolic reactions.
 
-Observed an almost complete absence of graded metabolic sensitivities across Blood, TumorEdge, and TumorCore.
+Across Blood, TumorEdge, and TumorCore conditions, we observed a near-complete absence of graded metabolic sensitivities. Partial inhibition rarely induced strong or near-essential phenotypes, even under severe tumor microenvironment (TME) constraints.
 
-Partial inhibition failed to induce near-essential or strongly sensitive phenotypes, even under severe TME constraints.
+Instead, most reactions remained fully buffered under partial inhibition and only became lethal upon complete loss of activity. These results indicate that T-cell metabolism under realistic TME conditions operates in a threshold-dominated, binary survival regime, rather than exhibiting smoothly graded vulnerabilities at the single-reaction level.
 
-These results indicate that T-cell metabolism under realistic TME conditions operates in a binary survival regime, with reactions being either fully buffered or becoming lethal only upon complete inhibition.
-
-Day 30 – Functional objective analysis under realistic TME
-
-Replaced biomass maximization with functional metabolic objectives, including ATP and nucleotide (AMP, GMP, IMP, UMP, CTP) production, to assess environment-dependent metabolic capacity beyond growth.
+Importantly, this collapse-like behavior reflects structural bottlenecks in the metabolic network rather than numerical artifacts, consistent with feasibility transitions expected in constraint-based models.
 
 Computed maximal functional capacities under expression- and TME-constrained models.
 
