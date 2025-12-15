@@ -91,3 +91,9 @@ Observed that ATP production capacity remained nearly constant across a wide ran
 This robustness indicates that functional metabolic outputs are largely insensitive to moderate growth constraints and are instead primarily determined by microenvironmental and expression-driven constraints.
 
 Together, these analyses reveal a clear separation between growth optimization and functional metabolic potential under realistic TME conditions.
+
+Project Summary 
+
+This project establishes a comprehensive, end-to-end computational framework for modeling T-cell metabolism under realistic tumor microenvironment constraints. By integrating genome-scale metabolic modeling, expression-based flux constraints, physiologically informed nutrient limitations, and systematic perturbation analyses, the study demonstrates that TME-constrained T-cell metabolism is governed by hard, threshold-driven bottlenecks rather than graded vulnerabilities.
+
+Across multiple analytical layers—global flux states, subsystem rewiring, essentiality screening, partial inhibition, and functional capacity analysis—the results consistently support a binary metabolic robustness regime. Importantly, functional metabolic capacity is shown to be decoupled from growth and robust to moderate biomass constraints, highlighting environment-driven metabolic reprogramming as a dominant organizing principle.
