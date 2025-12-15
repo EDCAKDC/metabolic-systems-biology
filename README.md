@@ -71,3 +71,23 @@ Observed an almost complete absence of graded metabolic sensitivities across Blo
 Partial inhibition failed to induce near-essential or strongly sensitive phenotypes, even under severe TME constraints.
 
 These results indicate that T-cell metabolism under realistic TME conditions operates in a binary survival regime, with reactions being either fully buffered or becoming lethal only upon complete inhibition.
+
+Day 30 – Functional objective analysis under realistic TME
+
+Replaced biomass maximization with functional metabolic objectives, including ATP and nucleotide (AMP, GMP, IMP, UMP, CTP) production, to assess environment-dependent metabolic capacity beyond growth.
+
+Computed maximal functional capacities under expression- and TME-constrained models.
+
+Revealed consistent environment-dependent functional hierarchies, with TumorCore exhibiting the highest functional capacity, followed by TumorEdge and Blood.
+
+These results demonstrate that TME-induced metabolic reprogramming enhances specific functional outputs even under severe nutrient limitation, highlighting a decoupling between growth and functional metabolic capacity.
+
+Day 31 – Robustness of functional capacity to growth constraints
+
+Evaluated functional capacities under fixed biomass constraints ranging from 60% to 90% of maximal growth to assess sensitivity to growth trade-offs.
+
+Observed that ATP production capacity remained nearly constant across a wide range of biomass constraints within each environment.
+
+This robustness indicates that functional metabolic outputs are largely insensitive to moderate growth constraints and are instead primarily determined by microenvironmental and expression-driven constraints.
+
+Together, these analyses reveal a clear separation between growth optimization and functional metabolic potential under realistic TME conditions.
